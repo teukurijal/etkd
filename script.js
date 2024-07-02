@@ -2,8 +2,8 @@ const { Builder, Browser } = require("selenium-webdriver");
 const { login, generatePayload } = require("./function/common");
 const { calendarList } = require("./data/calendar");
 
-const user = "";
-const pass = "";
+const user = "10207320000223202310320";
+const pass = "rsudkalid";
 const loginUrl = "https://rsudkalideres.com/etkd/index.php";
 const etdkUrl =
   "https://rsudkalideres.com/etkd/media.php?module=kinerja&act=input";
@@ -31,7 +31,6 @@ const etkdListUrl = `https://rsudkalideres.com/etkd/media.php?module=kinerja&act
       await generatePayload({ driver, calendar, etdkUrl, etkdListUrl, startAt });
     }
 
-    return;
   } catch (e) {
     console.log(e);
   } finally {
